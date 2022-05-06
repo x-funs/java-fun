@@ -165,7 +165,7 @@ public class RandomFun {
      */
     public static String randomPool(String baseString, int length) {
         if (Fun.empty(baseString)) {
-            return StringFun.EMPTY;
+            return Fun.EMPTY;
         }
 
         final StringBuilder sb = new StringBuilder(length);

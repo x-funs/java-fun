@@ -6,8 +6,6 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.text.NumberFormat;
 
-import static io.github.xfuns.java.Fun.empty;
-
 public class NumberFun {
 
     /**

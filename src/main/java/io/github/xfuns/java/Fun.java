@@ -1,11 +1,11 @@
 package io.github.xfuns.java;
 
-import io.github.xfuns.java.fun.*;
 import io.github.xfuns.java.constant.DatePattern;
 import io.github.xfuns.java.constant.RegexPattern;
 import io.github.xfuns.java.crypto.Hashids;
 import io.github.xfuns.java.date.Strtotime;
 import io.github.xfuns.java.expection.FunException;
+import io.github.xfuns.java.fun.*;
 
 import java.lang.reflect.Array;
 import java.math.BigDecimal;
@@ -26,6 +26,37 @@ import java.util.regex.Pattern;
  * @author smallmenu
  */
 public class Fun extends FunBase {
+    /**
+     * 空字符串
+     */
+    public static final String EMPTY = "";
+
+    /**
+     * 空 Json 字符串
+     */
+    public static final String EMPTY_JSON = "{}";
+
+    /**
+     * 英文空格
+     */
+    public static final String SPACE = " ";
+
+    /**
+     * 换行符
+     */
+    public static final String CR = "\r";
+
+    /**
+     * 换行符
+     */
+    public static final String LF = "\n";
+
+    /**
+     * 换行符
+     */
+    public static final String CRLF = "\r\n";
+
+
     /**
      * 禁止实例化
      */
@@ -414,7 +445,7 @@ public class Fun extends FunBase {
      * @return String
      */
     public static String trimToEmpty(final CharSequence str) {
-        return str == null ? StringFun.EMPTY : trim(str);
+        return str == null ? EMPTY : trim(str);
     }
 
     /**
@@ -443,7 +474,7 @@ public class Fun extends FunBase {
      */
     public static String trimToNull(final CharSequence str) {
         final String trimStr = trim(str);
-        return StringFun.EMPTY.equals(trimStr) ? null : trimStr;
+        return EMPTY.equals(trimStr) ? null : trimStr;
     }
 
     /**
@@ -811,7 +842,7 @@ public class Fun extends FunBase {
         }
 
         if (length < 0) {
-            return StringFun.EMPTY;
+            return EMPTY;
         }
 
         if (str.length() <= length) {
@@ -834,7 +865,7 @@ public class Fun extends FunBase {
         }
 
         if (length < 0) {
-            return StringFun.EMPTY;
+            return EMPTY;
         }
 
         if (str.length() <= length) {
@@ -1004,7 +1035,7 @@ public class Fun extends FunBase {
      */
     public static String underToCamel(String input) {
         if (input == null) {
-            return StringFun.EMPTY;
+            return EMPTY;
         }
 
         if (!contains(input, StringFun.UNDERLINE)) {
@@ -1033,10 +1064,15 @@ public class Fun extends FunBase {
         return sb.toString();
     }
 
-    // 大驼峰转下划线
+    /**
+     * 大驼峰转下划线
+     *
+     * @param input String
+     * @return String
+     */
     public static String camelToUnder(String input) {
         if (input == null) {
-            return StringFun.EMPTY;
+            return EMPTY;
         }
 
         String str = input;
@@ -1070,7 +1106,7 @@ public class Fun extends FunBase {
      */
     public static String repeat(final char ch, final int repeat) {
         if (repeat <= 0) {
-            return StringFun.EMPTY;
+            return EMPTY;
         }
 
         final char[] buf = new char[repeat];
@@ -1094,7 +1130,7 @@ public class Fun extends FunBase {
         }
 
         if (repeat <= 0) {
-            return StringFun.EMPTY;
+            return EMPTY;
         }
 
         final int inputLength = str.length();
@@ -1597,7 +1633,7 @@ public class Fun extends FunBase {
             start = 0;
         }
         if (start > str.length()) {
-            return StringFun.EMPTY;
+            return EMPTY;
         }
 
         return str.toString().substring(start);
@@ -1628,7 +1664,7 @@ public class Fun extends FunBase {
         }
 
         if (start > end) {
-            return StringFun.EMPTY;
+            return EMPTY;
         }
 
         if (start < 0) {
@@ -1679,7 +1715,7 @@ public class Fun extends FunBase {
         }
 
         if (start > end) {
-            return StringFun.EMPTY;
+            return EMPTY;
         }
 
         if (start < 0) {
@@ -1706,7 +1742,7 @@ public class Fun extends FunBase {
         }
 
         if (separator == null) {
-            separator = StringFun.EMPTY;
+            separator = EMPTY;
         }
 
         final StringBuilder sb = new StringBuilder();
@@ -1753,11 +1789,11 @@ public class Fun extends FunBase {
         }
 
         if (separator == null) {
-            separator = StringFun.EMPTY;
+            separator = EMPTY;
         }
 
         if (!iterator.hasNext()) {
-            return StringFun.EMPTY;
+            return EMPTY;
         }
 
         final Object first = iterator.next();
@@ -1907,7 +1943,7 @@ public class Fun extends FunBase {
             return toStr(str);
         }
 
-        return str.toString().replace(remove, StringFun.EMPTY);
+        return str.toString().replace(remove, EMPTY);
     }
 
     /**
@@ -2515,7 +2551,7 @@ public class Fun extends FunBase {
             return url;
         }
 
-        return StringFun.EMPTY;
+        return EMPTY;
     }
 
     // 判断字符串是否全部为数字

@@ -3,7 +3,6 @@ package io.github.xfuns.java;
 import io.github.xfuns.java.fun.DataSizeFun;
 import io.github.xfuns.java.fun.DigestFun;
 import io.github.xfuns.java.fun.RandomFun;
-import io.github.xfuns.java.fun.StringFun;
 
 import java.util.Base64;
 
@@ -277,7 +276,7 @@ public class FunBase {
         }
 
         if (separator == null) {
-            separator = StringFun.EMPTY;
+            separator = Fun.EMPTY;
         }
 
         final StringBuilder sb = new StringBuilder();
@@ -307,7 +306,7 @@ public class FunBase {
         }
 
         if (separator == null) {
-            separator = StringFun.EMPTY;
+            separator = Fun.EMPTY;
         }
 
         final StringBuilder sb = new StringBuilder();
@@ -337,7 +336,7 @@ public class FunBase {
         }
 
         if (separator == null) {
-            separator = StringFun.EMPTY;
+            separator = Fun.EMPTY;
         }
 
         final StringBuilder sb = new StringBuilder();
@@ -367,7 +366,7 @@ public class FunBase {
         }
 
         if (separator == null) {
-            separator = StringFun.EMPTY;
+            separator = Fun.EMPTY;
         }
 
         final StringBuilder sb = new StringBuilder();
@@ -397,7 +396,7 @@ public class FunBase {
         }
 
         if (separator == null) {
-            separator = StringFun.EMPTY;
+            separator = Fun.EMPTY;
         }
 
         final StringBuilder sb = new StringBuilder();
@@ -427,7 +426,7 @@ public class FunBase {
         }
 
         if (separator == null) {
-            separator = StringFun.EMPTY;
+            separator = Fun.EMPTY;
         }
 
         final StringBuilder sb = new StringBuilder();
@@ -457,7 +456,7 @@ public class FunBase {
         }
 
         if (separator == null) {
-            separator = StringFun.EMPTY;
+            separator = Fun.EMPTY;
         }
 
         final StringBuilder sb = new StringBuilder();
@@ -487,7 +486,7 @@ public class FunBase {
         }
 
         if (separator == null) {
-            separator = StringFun.EMPTY;
+            separator = Fun.EMPTY;
         }
 
         final StringBuilder sb = new StringBuilder();
