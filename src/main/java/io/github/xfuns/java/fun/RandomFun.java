@@ -12,9 +12,14 @@ import java.util.concurrent.ThreadLocalRandom;
 public class RandomFun {
 
     /**
-     * 随机字符池
+     * 随机大写字符串池
      */
-    public static final String RANDOM_LETTER = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    public static final String RANDOM_UPPER_LETTER = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+    /**
+     * 随机小写字符串池
+     */
+    public static final String RANDOM_LOWER_LETTER = "abcdefghijklmnopqrstuvwxyz";
 
     /**
      * 随机数字池
@@ -22,9 +27,14 @@ public class RandomFun {
     public static final String RANDOM_NUMBER = "0123456789";
 
     /**
+     * 随机大小写字符串池
+     */
+    public static final String RANDOM_LETTER = RANDOM_UPPER_LETTER + RANDOM_LOWER_LETTER;
+
+    /**
      * 随机字符和数字池
      */
-    public static final String RANDOM_LETTER_NUMBER= RANDOM_LETTER + RANDOM_NUMBER;
+    public static final String RANDOM_LETTER_NUMBER = RANDOM_LETTER + RANDOM_NUMBER;
 
     /**
      * 禁止实例化
