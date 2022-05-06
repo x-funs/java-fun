@@ -2503,13 +2503,13 @@ public class Fun extends FunBase {
      */
     public static String urlNormalize(final String url) {
         if (isUrl(url)) {
-            if (startsWith(url, URLFun.NO_PROTOCOL)) {
-                String formatUrl = removePrefix(url, URLFun.NO_PROTOCOL);
-                return URLFun.HTTP_PROTOCOL + URLFun.PROTOCOL_BREAK + formatUrl;
+            if (startsWith(url, UrlFun.NO_PROTOCOL)) {
+                String formatUrl = removePrefix(url, UrlFun.NO_PROTOCOL);
+                return UrlFun.HTTP_PROTOCOL + UrlFun.PROTOCOL_BREAK + formatUrl;
             }
 
-            if (!contains(url, URLFun.PROTOCOL_BREAK)) {
-                return URLFun.HTTP_PROTOCOL + URLFun.PROTOCOL_BREAK + url;
+            if (!contains(url, UrlFun.PROTOCOL_BREAK)) {
+                return UrlFun.HTTP_PROTOCOL + UrlFun.PROTOCOL_BREAK + url;
             }
 
             return url;
