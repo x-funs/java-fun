@@ -6,7 +6,7 @@
 
     <groupId>io.github.x-funs</groupId>
     <artifactId>java-fun</artifactId>
-    <version>0.1.0</version>
+    <version>0.1.1</version>
 
     <name>java-fun</name>
     <description>Java With Fun(ctions)</description>
