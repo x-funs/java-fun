@@ -1,4 +1,4 @@
-# Java with Fun (Functions)
+# Java With Fun (Functions)
 
 ## Install
 
@@ -17,8 +17,11 @@ import io.github.xfuns.java.Fun;
 
 public class JavaFun {
   public static void main(String[] args) {
-    System.out.println(Fun.md5("12345"));
+    System.out.println(Fun.md5("java-fun"));
   }
 }
 ```
+
+## Functions
+
 
