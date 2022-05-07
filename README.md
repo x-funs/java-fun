@@ -6,7 +6,7 @@
 <dependency>
   <groupId>io.github.x-funs</groupId>
   <artifactId>java-fun</artifactId>
-  <version>0.1.2</version>
+  <version>${java-fun.version}</version>
 </dependency>
 ```
 
