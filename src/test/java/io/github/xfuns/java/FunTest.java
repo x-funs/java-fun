@@ -4,6 +4,7 @@ import io.github.xfuns.java.constant.DatePattern;
 import io.github.xfuns.java.fun.DataSizeFun;
 import io.github.xfuns.java.fun.RandomFun;
 import io.github.xfuns.java.fun.SimilarityFun;
+import io.github.xfuns.java.fun.StringFun;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -694,14 +695,14 @@ public class FunTest {
 
     @Test
     public void testMd5() {
-        Assert.assertEquals("d41d8cd98f00b204e9800998ecf8427e", Fun.md5(Fun.EMPTY));
+        Assert.assertEquals("d41d8cd98f00b204e9800998ecf8427e", Fun.md5(StringFun.EMPTY));
         Assert.assertEquals("df10ef8509dc176d733d59549e7dbfaf", Fun.md5("123456abc"));
         Assert.assertEquals("c3fcd3d76192e4007dfb496cca67e13b", Fun.md5("abcdefghijklmnopqrstuvwxyz"));
     }
 
     @Test
     public void testSha() {
-        Assert.assertEquals("da39a3ee5e6b4b0d3255bfef95601890afd80709", Fun.sha1(Fun.EMPTY));
+        Assert.assertEquals("da39a3ee5e6b4b0d3255bfef95601890afd80709", Fun.sha1(StringFun.EMPTY));
         Assert.assertEquals("a172ffc990129fe6f68b50f6037c54a1894ee3fd", Fun.sha1("123456abc"));
         Assert.assertEquals("32d10c7b8cf96570ca04ce37f2a19d84240d3a89", Fun.sha1("abcdefghijklmnopqrstuvwxyz"));
         Assert.assertEquals("931145d4ddd1811be545e4ac88a81f1fdbfaf0779c437efba16b884595274d11", Fun.sha256("123456abc"));
@@ -714,7 +715,7 @@ public class FunTest {
 
     @Test
     public void testBase64() {
-        Assert.assertEquals("", Fun.base64Encode(Fun.EMPTY));
+        Assert.assertEquals("", Fun.base64Encode(StringFun.EMPTY));
         Assert.assertEquals("MTIzNDU2YWJj", Fun.base64Encode(Fun.bytes("123456abc")));
         Assert.assertEquals("MTIzNDU2YWJj", Fun.base64Encode("123456abc"));
         Assert.assertEquals("YWJjZGVmZ2hpamtsbW5vcHFyc3R1dnd4eXo=", Fun.base64Encode("abcdefghijklmnopqrstuvwxyz"));

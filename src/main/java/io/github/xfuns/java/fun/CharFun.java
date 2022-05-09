@@ -6,17 +6,39 @@ package io.github.xfuns.java.fun;
  * @author smallmenu
  */
 public class CharFun {
-    public static final char SPACE = ' ';
-    public static final char TAB = '	';
+    /**
+     * 点
+     */
     public static final char DOT = '.';
+
+    /**
+     * 斜杠
+     */
     public static final char SLASH = '/';
+
+    /**
+     * 反斜杠
+     */
     public static final char BACKSLASH = '\\';
+
+    /**
+     * 换行符
+     */
     public static final char CR = '\r';
+
+    /**
+     * 换行符
+     */
     public static final char LF = '\n';
-    public static final char UNDERLINE = '_';
-    public static final char DASHED = '-';
-    public static final char COMMA = ',';
-    public static final char AMP = '&';
+
+    /**
+     * 下划线
+     */
+    public static final char UNDESCORE = '_';
+
+    /**
+     * 冒号
+     */
     public static final char COLON = ':';
 
     /**

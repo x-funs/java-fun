@@ -1,7 +1,5 @@
 package io.github.xfuns.java.fun;
 
-import io.github.xfuns.java.Fun;
-
 /**
  * DataSizeFun
  *
@@ -92,7 +90,7 @@ final public class DataSizeFun {
             return bytes + DATASIZE_FORMAT[index];
         }
 
-        return Fun.EMPTY;
+        return StringFun.EMPTY;
     }
 
     /**
@@ -109,7 +107,7 @@ final public class DataSizeFun {
             return size + suffix;
         }
 
-        return Fun.EMPTY;
+        return StringFun.EMPTY;
     }
 
     /**

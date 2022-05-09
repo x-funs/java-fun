@@ -33,19 +33,9 @@ public class StringFun {
     public static final String SPACE = " ";
 
     /**
-     * 缩进
-     */
-    public static final String TAB = "	";
-
-    /**
      * 点
      */
     public static final String DOT = ".";
-
-    /**
-     * 双点
-     */
-    public static final String DOUBLE_DOT = "..";
 
     /**
      * 斜杠
@@ -60,17 +50,7 @@ public class StringFun {
     /**
      * 下划线
      */
-    public static final String UNDERLINE = "_";
-
-    /**
-     * 横杠
-     */
-    public static final String DASHED = "-";
-
-    /**
-     * 英文逗号
-     */
-    public static final String COMMA = ",";
+    public static final String UNDERSCORE = "_";
 
     /**
      * 换行符
@@ -93,34 +73,9 @@ public class StringFun {
     public static final String COLON = ":";
 
     /**
-     * 井号
-     */
-    public static final String SHARP = "#";
-
-    /**
      * 艾特
      */
     public static final String AT = "@";
-
-    /**
-     * HTML 空格转义
-     */
-    public static final String HTML_NBSP = "&nbsp;";
-
-    /**
-     * HTML &amp; 转义
-     */
-    public static final String HTML_AMP = "&amp;";
-
-    /**
-     * HTML &lt; 转义
-     */
-    public static final String HTML_LT = "&lt;";
-
-    /**
-     * HTML &gt; 转义
-     */
-    public static final String HTML_GT = "&gt;";
 
     /**
      * 填充限制
