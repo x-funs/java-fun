@@ -1,5 +1,7 @@
 # Java With Fun (Functions)
 
+Java with functions is a small java tools and utils library.
+
 ## Install
 
 ```xml
