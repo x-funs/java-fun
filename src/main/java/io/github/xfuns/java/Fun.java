@@ -997,12 +997,12 @@ public class Fun extends FunBase {
     }
 
     /**
-     * 下划线转大驼峰
+     * 蛇形转大驼峰
      *
      * @param input String
      * @return String
      */
-    public static String underToCamel(String input) {
+    public static String snakeToCamel(String input) {
         if (input == null) {
             return StringFun.EMPTY;
         }
@@ -1034,12 +1034,12 @@ public class Fun extends FunBase {
     }
 
     /**
-     * 大驼峰转下划线
+     * 大驼峰转蛇形
      *
      * @param input String
      * @return String
      */
-    public static String camelToUnder(String input) {
+    public static String camelToSanke(String input) {
         if (input == null) {
             return StringFun.EMPTY;
         }

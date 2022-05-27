@@ -14,7 +14,7 @@ public class DatePattern {
     /**
      * DatePattern
      */
-    public static final String DATE_PATTERN_CN = "yyyy年MM月dd日";
+    public static final String DATE_PATTERN_ZH = "yyyy年MM月dd日";
 
     /**
      * DatePattern
@@ -34,7 +34,7 @@ public class DatePattern {
     /**
      * DatePattern
      */
-    public static final String DATETIME_PATTERN_CN = "yyyy年MM月dd日 HH时mm分ss秒";
+    public static final String DATETIME_PATTERN_ZH = "yyyy年MM月dd日 HH时mm分ss秒";
 
     /**
      * DatePattern

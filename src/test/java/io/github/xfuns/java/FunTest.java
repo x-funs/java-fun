@@ -297,7 +297,7 @@ public class FunTest {
     public void testDate() {
         System.out.println(Fun.date());
         System.out.println(date(DatePattern.DATE_PATTERN_SLASH));
-        System.out.println(date(DatePattern.DATETIME_PATTERN_CN));
+        System.out.println(date(DatePattern.DATETIME_PATTERN_ZH));
         System.out.println(date(DatePattern.DATETIME_PATTERN_UTC));
 
         Assert.assertEquals("2015-04-06 16:03:03", Fun.date(1428307383));
@@ -801,19 +801,19 @@ public class FunTest {
 
     @Test
     public void testCamel() {
-        Assert.assertEquals("", Fun.underToCamel(null));
-        Assert.assertEquals("", Fun.underToCamel(""));
-        Assert.assertEquals("_abc", Fun.underToCamel("_abc"));
-        Assert.assertEquals("AAbc", Fun.underToCamel("a_abc"));
-        Assert.assertEquals("AAbc", Fun.underToCamel("a__abc"));
-        Assert.assertEquals("TestAbc", Fun.underToCamel("test_abc_"));
-        Assert.assertEquals("TestAbc", Fun.underToCamel("test_abc"));
-        Assert.assertEquals("TestAbcDe", Fun.underToCamel("test_ABc_dE"));
+        Assert.assertEquals("", Fun.snakeToCamel(null));
+        Assert.assertEquals("", Fun.snakeToCamel(""));
+        Assert.assertEquals("_abc", Fun.snakeToCamel("_abc"));
+        Assert.assertEquals("AAbc", Fun.snakeToCamel("a_abc"));
+        Assert.assertEquals("AAbc", Fun.snakeToCamel("a__abc"));
+        Assert.assertEquals("TestAbc", Fun.snakeToCamel("test_abc_"));
+        Assert.assertEquals("TestAbc", Fun.snakeToCamel("test_abc"));
+        Assert.assertEquals("TestAbcDe", Fun.snakeToCamel("test_ABc_dE"));
 
 
-        Assert.assertEquals("test_abc_de", Fun.camelToUnder("TestAbcDe"));
-        Assert.assertEquals("test_abc_de", Fun.camelToUnder("testAbcDe"));
-        Assert.assertEquals("a_b_c_d", Fun.camelToUnder("ABCD"));
+        Assert.assertEquals("test_abc_de", Fun.camelToSanke("TestAbcDe"));
+        Assert.assertEquals("test_abc_de", Fun.camelToSanke("testAbcDe"));
+        Assert.assertEquals("a_b_c_d", Fun.camelToSanke("ABCD"));
     }
 
     @Test
