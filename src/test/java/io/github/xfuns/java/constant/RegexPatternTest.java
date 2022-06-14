@@ -6,6 +6,11 @@ import org.junit.Test;
 public class RegexPatternTest {
 
     @Test
+    public void testEmail() {
+        Assert.assertTrue(RegexPattern.EMAIL.matcher("aaa@aa.aa").matches());
+    }
+
+    @Test
     public void testMobile() {
         Assert.assertTrue(RegexPattern.MOBILE.matcher("+8618600001111").matches());
     }
