@@ -1003,6 +1003,16 @@ public class Fun extends FunBase {
      * @return String
      */
     public static String snakeToCamel(String input) {
+        return snakeToCamel(input, true);
+    }
+
+    /**
+     * 蛇形转驼峰
+     *
+     * @param input String
+     * @return String
+     */
+    public static String snakeToCamel(String input, boolean bigCamel) {
         if (input == null) {
             return StringFun.EMPTY;
         }
@@ -1019,7 +1029,11 @@ public class Fun extends FunBase {
         for (int i = 0; i < length; i++) {
             char c = input.charAt(i);
             if (i == 0) {
-                sb.append(Character.toUpperCase(c));
+                if (bigCamel) {
+                    sb.append(Character.toUpperCase(c));
+                } else {
+                    sb.append(Character.toLowerCase(c));
+                }
             } else if (c == CharFun.UNDESCORE) {
                 upperCase = true;
             } else if (upperCase) {
@@ -1034,7 +1048,7 @@ public class Fun extends FunBase {
     }
 
     /**
-     * 大驼峰转蛇形
+     * 驼峰转蛇形
      *
      * @param input String
      * @return String
