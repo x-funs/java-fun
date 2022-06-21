@@ -1010,6 +1010,7 @@ public class Fun extends FunBase {
      * 蛇形转驼峰
      *
      * @param input String
+     * @param bigCamel boolean
      * @return String
      */
     public static String snakeToCamel(String input, boolean bigCamel) {
