@@ -19,14 +19,17 @@ import io.github.xfuns.java.Fun;
 
 public class JavaFun {
     public static void main(String[] args) {
-        // 字符串 MD5
+        // whether the string is empty after trim (blank or not)
+        System.out.println(Fun.blank("java-fun"));
+
+        // return string md5 hash
         System.out.println(Fun.md5("java-fun"));
     
-        // 字符串转Int
+        // parse string to integer
         System.out.println(Fun.toInt("42"));
     
-        // 字符串转时间戳
-        System.out.println(Fun.strtotime("2015年04月06日 16时03分03秒"));
+        // auto parse many datetime string to long timestamp
+        System.out.println(Fun.strtotime("2015-04-06 16:03:03"));
     }
 }
 ```
