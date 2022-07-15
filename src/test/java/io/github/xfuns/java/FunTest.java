@@ -782,16 +782,37 @@ public class FunTest {
     @Test
     public void testSimilar() {
         System.out.println(Fun.similarity("", ""));
-        System.out.println(Fun.similarity("ABC", "ABCD"));
-        System.out.println(Fun.similarity("ABC", "AB"));
-        System.out.println(Fun.similarity("ABC", "AB", 2));
-        System.out.println(Fun.similarity("我是中国人，我说中国话", "我说中国话"));
-        System.out.println(Fun.similarity("我是中国人，我说中国话", "中国", 4));
-        System.out.println(Fun.similarity("【一点温暖·陕西西安】“一分钟就到”网约车：你感动我 我温暖你 |唐博|核酸_网易政务", "【一点温暖·陕西西安】“一分钟就到”网约车：你感动我 我温暖你"));
+        System.out.println(Fun.similarity("ABC", "B"));
+        System.out.println(Fun.similarity("ABC", "AC"));
+        System.out.println(Fun.similarity("ABC", "CA"));
+        System.out.println(Fun.similarity("ABCDEF", "CD"));
+        System.out.println(Fun.similarity("ABCDEFGHIG", "CEGML"));
+        System.out.println(Fun.similarity("ABCDEFGHIG", "GIH"));
+        System.out.println(Fun.similarity("我是中国人我说中国话", "中国人米说"));
+        System.out.println(Fun.similarity("国家统计局：上半年GDP同比增长5%", "上半年GDP同比增长"));
 
         System.out.println("--");
-        System.out.println(SimilarityFun.strSim("ABC", "AB"));
-        System.out.println(SimilarityFun.strSim("【一点温暖·陕西西安】“一分钟就到”网约车：你感动我 我温暖你 |唐博|核酸_网易政务", "【一点温暖·陕西西安】“一分钟就到”网约车：你感动我 我温暖你"));
+        System.out.println(SimilarityFun.strSim("", ""));
+        System.out.println(SimilarityFun.strSim("ABC", "B"));
+        System.out.println(SimilarityFun.strSim("ABC", "AC"));
+        System.out.println(SimilarityFun.strSim("ABC", "CA"));
+        System.out.println(SimilarityFun.strSim("ABCDEF", "CD"));
+        System.out.println(SimilarityFun.strSim("ABCDEFGHIG", "CEGML"));
+        System.out.println(SimilarityFun.strSim("ABCDEFGHIG", "GIH"));
+        System.out.println(SimilarityFun.strSim("我是中国人我说中国话", "中国人米说"));
+        System.out.println(SimilarityFun.strSim("我是中国人我说中国话", "中国人米说"));
+        System.out.println(SimilarityFun.strSim("国家统计局上半年GDP同比增长5", "上半年GDP同比增长"));
+    }
+
+    @Test
+    public void testLcs() {
+        System.out.println(SimilarityFun.lcs("ABC", "B"));
+        System.out.println(SimilarityFun.lcs("ABC", "AC"));
+        System.out.println(SimilarityFun.lcs("ABC", "CA"));
+        System.out.println(SimilarityFun.lcs("ABCDEF", "CD"));
+        System.out.println(SimilarityFun.lcs("ABCDEFGHIG", "CEGML"));
+        System.out.println(SimilarityFun.lcs("ABCDEFGHIG", "GIH"));
+        System.out.println(SimilarityFun.lcs("我是中国人我说中国话", "中国人米说"));
     }
 
     @Test

@@ -111,18 +111,13 @@ public class SimilarityFun {
         int len1 = a.length();
         int len2 = b.length();
         if (len1 == 0 || len2 == 0) {
-            return 0;
+            return 1;
         }
-        double ratio;
-        if (len1 > len2) {
-            ratio = (len1 + 0.0) / len2;
-        } else {
-            ratio = (len2 + 0.0) / len1;
-        }
-        if (ratio >= 3) {
-            return 0;
-        }
-        return (lcs(a, b) + 0.0) / Math.max(len1, len2);
+
+        double lcs = lcs(a, b) + 0.0;
+        double max = Math.max(len1, len2) + 0.0;
+
+        return lcs / max;
     }
 
     public static int lcs(String x, String y) {
