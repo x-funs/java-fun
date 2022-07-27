@@ -2553,4 +2553,16 @@ public class Fun extends FunBase {
         }
         return matches(RegexPattern.LETTER, str);
     }
+
+    /**
+     * 将字符串的所有数据依次写成一行，去除无意义字符串
+     * 去除标点符号、符号、分隔符、其他
+     *
+     * @param str 字符串
+     * @return 处理后的字符串
+     */
+    public static String removeSign(String str) {
+        str = str.replaceAll("\\n|\\r|\\s", "");
+        return str.replaceAll("[\\pP\\pS]", "");
+    }
 }

@@ -853,4 +853,10 @@ public class FunTest {
         Assert.assertFalse(Fun.isLetter(null));
         Assert.assertFalse(Fun.isLetter("123"));
     }
+
+    @Test
+    public void testRemoveSign() {
+        String str = ",.!，，D_NAME。！；‘’”“《》**dfs#%^&()-+     我1431221     中国123漢字\n\n\nかどうかのjavaを<決定>$¥";
+        System.out.println(removeSign(str));
+    }
 }
