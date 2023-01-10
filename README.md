@@ -19,7 +19,7 @@ import io.github.xfuns.java.Fun;
 
 public class JavaFun {
     public static void main(String[] args) {
-        // 判断是否为空
+        // 判断 Object 是否为空
         System.out.println(Fun.empty("  "));
         
         // 判断是否为空白
