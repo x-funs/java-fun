@@ -1,6 +1,6 @@
 # Java With Fun (Functions)
 
-Java with functions is a small java tools and utils library.
+Java With Fun (Functions) 是一个短小能干的 Java 工具库。
 
 ## Install
 
@@ -19,16 +19,19 @@ import io.github.xfuns.java.Fun;
 
 public class JavaFun {
     public static void main(String[] args) {
-        // whether the string is empty after trim (blank or not)
-        System.out.println(Fun.blank("java-fun"));
+        // 判断是否为空
+        System.out.println(Fun.empty("  "));
+        
+        // 判断是否为空白
+        System.out.println(Fun.blank("  "));
 
-        // return string md5 hash
+        // 返回 MD5 字符串
         System.out.println(Fun.md5("java-fun"));
     
         // parse string to integer
         System.out.println(Fun.toInt("42"));
     
-        // auto parse many datetime string to long timestamp
+        // 自动解析时间格式为秒时间戳
         System.out.println(Fun.strtotime("2015-04-06 16:03:03"));
     }
 }
