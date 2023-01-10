@@ -2,7 +2,7 @@
 
 Java With Fun (Functions) 是一个短小能干的 Java 工具库。
 
-## Install
+## 使用
 
 ```xml
 <dependency>
@@ -12,7 +12,7 @@ Java With Fun (Functions) 是一个短小能干的 Java 工具库。
 </dependency>
 ```
 
-## Usage
+## 示例
 
 ```java
 import io.github.xfuns.java.Fun;
